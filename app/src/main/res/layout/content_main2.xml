@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#4A148C"
+    android:orientation="vertical"
+    tools:context="com.example.gregoryjones.project2.MainActivity2"
+    tools:showIn="@layout/activity_main2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Original Message"
+        android:textStyle="bold"
+        android:textSize = "20sp"
+        android:textColor ="#76FF03"
+        android:id="@+id/textView_OriginalMessage" />
+
+
+    <TextView
+        android:id="@+id/textView_GPSDATA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/textView_OriginalMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cipher Text"
+        android:textSize = "20sp"
+        android:textStyle="bold"
+        android:textColor ="#76FF03"
+        android:id="@+id/CipherText"
+        android:layout_below="@+id/textView_GPSDATA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decrypted Message"
+        android:textSize = "20sp"
+        android:textStyle="bold"
+        android:textColor ="#76FF03"
+        android:id="@+id/textView_DecryptedMessage"
+        android:layout_above="@+id/textView_EncryptedDataStatement2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="ENCRYPT BY AES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_EncryptedAES"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="DECRYPT BY AES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_DecryptAES"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignTop="@+id/textView_DecryptionCode"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView_EncryptionCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView_EncryptedDataStatement"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:text="Encrypted Data!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/textView_EncryptedDataStatement"
+        android:layout_marginTop="25dp"
+        android:layout_alignTop="@+id/CipherText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Encrypted Data!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/textView_EncryptedDataStatement2"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/button_EncryptedAES"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/textView_DecryptionCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_below="@+id/textView_EncryptedDataStatement2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
